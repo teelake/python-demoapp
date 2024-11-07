@@ -6,7 +6,9 @@ LABEL org.opencontainers.image.source = "https://github.com/teelake/python-demoa
 ARG srcDir=src
 WORKDIR /app
 COPY $srcDir/requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+#RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt && gunicorn --version
+
 
 COPY $srcDir/run.py .
 COPY $srcDir/app ./app
