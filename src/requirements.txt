@@ -4,4 +4,4 @@ psutil==6.1.0
 black==23.3.0        # Updated to a more recent version for Python 3.11 compatibility
 flake8==6.0.0        # Updated for compatibility with Python 3.11
 pytest==7.2.0        # Updated for Python 3.11 compatibility
-gunicorn
+gunicorn==20.1.0
